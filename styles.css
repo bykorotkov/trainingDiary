@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(120deg, rgb(81, 81, 218), rgb(228, 63, 63));
+    color: white;
+    min-height: 100vh;
+}
+
+header {
+    font-size: 3rem;
+}
+
+header,
+.exercise {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.exercise{
+    min-height: 10vh;
+}
+
+.train-input {
+    padding: 8px;
+    margin-left: 20px;
+    outline: none;
+    width: 14rem;
+   
+}
+
+.train-button {
+    padding: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: -0.5rem;
+    
+}
+
+.train-button:hover {
+    background: rgb(124, 124, 199);
+    color: white;
+}
+
+.train-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.train-list {
+    min-width: 40%;
+}
+
+.train-list li {
+    margin-left: 2.3rem;
+}
+
+.set {
+    margin: 0.5rem;
+    background: white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+.set li {
+    flex: 1;
+}
+
+.delete-btn {
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    background: rgb(80, 69, 240);
+    color: white;
+}
+
+.set-item {
+    padding: 0rem 1rem;
+}
+
+.fa-trash {
+    pointer-events: none;
+}
+
+.fall {
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+}
+
+.select{
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+select{
+    cursor: pointer;
+    padding: 0.5rem;
+    width: 15rem;
+}
+
+.select::after{
+    content: "\25BC";
+    position: absolute;
+    top: 10;
+    right: 0;
+    padding: 0.5rem;
+    background: rgb(80, 69, 240);
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.select:hover::after {
+    background: white;
+    color: rgb(80, 69, 240);
+}
+
+.selector {
+    padding: 0rem 1rem;
+}
+.exercise p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 18px;
+    
+}
+
+.wrapper p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-bottom: -2rem;
+}
+
+
+.wrapper button{
+@include corners (5px);
+border: solid 1px white;
+text-decoration: none;
+cursor:pointer;
+font-size:1.2em;
+padding:5px 10px;
+width:180px;
+margin: 2rem;
+outline: none;
+border-radius: 4px;
+} 
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+ 
+.wrapper button:hover{
+	@include transition;
+	background: rgb(155, 155, 218);
+	border: solid 1px rgb(155, 155, 218);
+	
+}
+
+.wrapper h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#delAll-btn {
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    background: rgb(255, 80, 97);
+    color: white;
+    border-radius: 5px;
+    position: absolute;
+    margin-left: 2vh;
+    transition: all 0.3s ease;
+}
+
+#delAll-btn:hover{
+    background: blue;
+}
